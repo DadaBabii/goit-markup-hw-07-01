@@ -58,11 +58,11 @@
             <div class="container">
                 <h1 class="visually-hidden">Портфоліо</h1>
                 <ul class="button-list list">
-                    <li class="item"> <button type="button" class="button-pfl primary">Усі</button></li>
-                    <li class="item"> <button type="button" class="button-pfl secondary">Веб-сайти</button></li>
-                    <li class="item"> <button type="button" class="button-pfl secondary">Додатки</button></li>
-                    <li class="item"> <button type="button" class="button-pfl secondary">Дизайн</button></li>
-                    <li class="item"> <button type="button" class="button-pfl secondary">Маркетинг</button></li>        
+                    <li class="button-list_item"> <button type="button" class="button-pfl button-pfl_active">Усі</button></li>
+                    <li class="button-list_item"> <button type="button" class="button-pfl button-pfl_disable">Веб-сайти</button></li>
+                    <li class="button-list_item"> <button type="button" class="button-pfl button-pfl_disable">Додатки</button></li>
+                    <li class="button-list_item"> <button type="button" class="button-pfl button-pfl_disable">Дизайн</button></li>
+                    <li class="button-list_item"> <button type="button" class="button-pfl button-pfl_disable">Маркетинг</button></li>        
                 </ul>
         
 
@@ -72,7 +72,7 @@
                 
                 <ul class="galery-list list">
 
-                    <li class="item">
+                    <li class="galery-list__item">
 
                         <a href="#" class="galery-thumb">
                             <div class="galery-overlay">
@@ -91,7 +91,7 @@
                            
                     </li>
 
-                    <li class="item">
+                    <li class="galery-list__item">
 
                         <a href="#" class="galery-thumb">
                             <div class="galery-overlay">
@@ -113,7 +113,7 @@
                             
                     </li>
                     
-                    <li class="item">
+                    <li class="galery-list__item">
 
                         <a href="#" class="galery-thumb">
                             <div class="galery-overlay">
@@ -135,7 +135,7 @@
     
                     </li>
                     
-                    <li class="item">
+                    <li class="galery-list__item">
 
                         <a href="#" class="galery-thumb">
 
@@ -158,7 +158,7 @@
  
                     </li>
                    
-                    <li class="item">
+                    <li class="galery-list__item">
                         
                         <a href="#" class="galery-thumb">
 
@@ -183,7 +183,7 @@
 
                     </li>
                     
-                    <li class="item">
+                    <li class="galery-list__item">
 
                         <a href="#" class="galery-thumb">
 
@@ -208,7 +208,7 @@
                            
                     </li>
                     
-                    <li class="item">
+                    <li class="galery-list__item">
 
                         <a href="#" class="galery-thumb">
 
@@ -231,7 +231,7 @@
                          
                     </li>
                     
-                    <li class="item">
+                    <li class="galery-list__item">
                        
                         <a href="#" class="galery-thumb">
 
@@ -255,7 +255,7 @@
                            
                     </li>
                     
-                    <li class="item">
+                    <li class="galery-list__item">
 
                         <a href="#" class="galery-thumb">
 
@@ -282,77 +282,93 @@
         </section>
     </main>
 
-    <footer class="footerall">
-        <div class="container">
-            <div class="container-footer">
-                <div class="container-foter-adress">
+    <footer class="footer-section">
+        <div class="container flex-footer">
     
-                    <a href="./index.html" class="footer-logo">
-                        <span class="footer-logoaccent">Web</span>Studio
-                    </a>
+            <div class="container-foter-adress">
     
-    
-                    <address>
-                        <ul class="contacts-list list">
-                            <li class="contact-item"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                                    rel="noopener noreferrer nofollow" class="adress">м. Київ, пр-т Лесі Українки, 26</a>
-                            </li>
-    
-                            <li class="contact-item"><a href="mailto:info@devstudio.com"
-                                    class="adress-link">info@devstudio.com</a></li>
-    
-                            <li class="contact-item"><a href="tel:+380961111111" class="adress-link">+38 096 111 11 11</a>
-                            </li>
-    
-                        </ul>
-                    </address>
-                </div>
+                <a href="./index.html" class="footer-logo">
+                    <span class="footer-logoaccent">Web</span>Studio
+                </a>
     
     
-                <div class="container-footer-socials">
+                <address>
+                    <ul class="list">
+                        <li class="contact-item"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                rel="noopener noreferrer nofollow" class="adress">м. Київ, пр-т Лесі Українки, 26</a></li>
     
-                    <h2 class="social-header">
-                        приєднуйтесь
-                    </h2>
+                        <li class="contact-item"><a href="mailto:info@devstudio.com"
+                                class="adress-link">info@devstudio.com</a></li>
     
-                    <ul class="social-list-footer list">
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-link-footer">
-                                <svg aria-label="іконка інстаграмм" class="social-list-icon-footer" width="20" height="20">
-                                    <use href="./images/symbol-defs.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
+                        <li class="contact-item"><a href="tel:+380961111111" class="adress-link">+38 096 111 11 11</a></li>
     
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-link-footer">
-                                <svg aria-label="іконка твіттера" class="social-list-icon-footer" width="20" height="20">
-                                    <use href="./images/symbol-defs.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-    
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-link-footer">
-                                <svg aria-label="іконка фейсбука" class="social-list-icon-footer" width="20" height="20">
-                                    <use href="./images/symbol-defs.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-    
-                        <li class="social-list-item">
-                            <a href="#" class="social-list-link-footer">
-                                <svg aria-label="іконка лінкедін" class="social-list-icon-footer" width="20" height="20">
-                                    <use href="./images/symbol-defs.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
                     </ul>
-                </div>
+                </address>
             </div>
+    
+    
+            <div class="container-footer-socials">
+    
+                <h2 class="footer-headers">
+                    приєднуйтесь
+                </h2>
+    
+                <ul class="social-list-footer list">
+                    <li>
+                        <a href="#" class="social-list-footer__link">
+                            <svg aria-label="іконка інстаграмм" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="social-list-footer__link">
+                            <svg aria-label="іконка твіттера" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="social-list-footer__link">
+                            <svg aria-label="іконка фейсбука" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#" class="social-list-footer__link">
+                            <svg aria-label="іконка лінкедін" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+    
+    
+            <form class="footer-form">
+                <p class="footer-headers">Підпишіться на розсилку</p>
+    
+                <div class="footer-form__field-wrapper">
+                    <label>
+                        <input type="email" class="footer-form-input" name="email" required placeholder="E-mail" />
+                    </label>
+    
+                    <button type="submit" class="footer-form-submit">Підписатися
+                        <svg aria-label="іконка телефону" class="footer-form-input-icon" width="24px" height="24px">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+    
+            </form>
+    
         </div>
-    
-    
     
     </footer>
 </body>
