@@ -66,6 +66,22 @@ a {
     text-decoration: none;
 }
 
+.headers {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+}
+
+.link {
+    display: inline-block;
+}
+
+
+
 /* Header */
 
 .flex-header {
@@ -73,14 +89,13 @@ a {
     align-items: center;
 }
 
-.head-block {
-
+.header {
 
     background-color: var(--main-light-color);
     border-bottom: 1px solid var(--border-color);
 }
 
-.logoaccent {
+.logo__accent {
     display: inline-block;
 
     color: var(--secondary-text-color);
@@ -114,7 +129,7 @@ a {
 
 
 
-.nav .nav-list {
+.nav .nav__link {
     position: relative;
     display: block;
     padding-top: 32px;
@@ -133,8 +148,8 @@ a {
 
 }
 
-.nav .nav-list:hover,
-.nav .nav-list:focus {
+.nav .nav__link:hover,
+.nav .nav__link:focus {
     color: var(--secondary-text-color);
 }
 
@@ -151,10 +166,6 @@ a {
 }
 
 
-
-.link {
-    display: inline-block;
-}
 
 .social-links {
     display: flex;
@@ -190,7 +201,7 @@ a {
     color: var(--secondary-text-color);
 }
 
-.link-icon {
+.link__icon {
 
     margin-right: 10px;
     fill: var(--light-text-color);
@@ -199,8 +210,8 @@ a {
 
 }
 
-.link:hover .link-icon,
-.link:focus .link-icon {
+.link:hover .link__icon,
+.link:focus .link__icon {
 
     fill: var(--secondary-text-color);
 
@@ -234,7 +245,7 @@ a {
     text-align: center;
 }
 
-.advertisement {
+.advertis-section__header {
     width: 696px;
     margin-top: 0;
     margin-left: auto;
@@ -330,7 +341,7 @@ a {
 }
 
 
-.benefit-header {
+.benefits-list__header {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -340,7 +351,7 @@ a {
 
 }
 
-.benefit-item {
+.benefits-list__item {
     font-size: 14px;
     line-height: 1.71;
     color: var(--light-text-color);
@@ -367,11 +378,11 @@ a {
     
     }
 
-.photo-item {
+.card-set__item {
     display: block;
 }
 
-.thumb-overlay {
+.photo-overlay__thumb {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -390,7 +401,7 @@ a {
     z-index: 10;
 }
 
-.text-overlay {
+.photo-overlay__text {
 color: var(--main-light-color);
     padding: 27px 10px;
     font-weight: 700;
@@ -406,16 +417,6 @@ color: var(--main-light-color);
     padding-bottom: var(--padding94);
 }
 
-.directions {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-   
-}
-
 
 
 /* Про команду */
@@ -427,15 +428,6 @@ color: var(--main-light-color);
     background-color: var(--light-bcg-color);
 }
 
-.team {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    margin-bottom: 50px;
-
-}
-
 
 
 .team-list {
@@ -444,7 +436,7 @@ color: var(--main-light-color);
     margin-bottom: calc(-1 * var(--margin30));
 }
 
-.team-list>.item {
+.team-list__item {
     flex-basis: calc(100% / 4 - var(--margin30));
     margin-left: var(--margin30);
     margin-bottom: var(--margin30);
@@ -452,7 +444,7 @@ color: var(--main-light-color);
 }
 
 
-.card-content {
+.team-list__content {
     padding-top: 30px;
     padding-bottom: 0;
     padding-left: 15px;
@@ -468,11 +460,8 @@ color: var(--main-light-color);
     overflow: hidden;
 }
 
-.team-person-item {
-    background-color: var(--main-light-color);
-}
 
-.team-person-name {
+.team-list__header {
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -481,7 +470,7 @@ color: var(--main-light-color);
     
 }
 
-.team-person-job {
+.team-list__text {
     color: var(--light-text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -496,7 +485,7 @@ color: var(--main-light-color);
     padding-top: 16px;
     padding-bottom: 30px;
 }
-.social-list-link {
+.social-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,8 +498,8 @@ color: var(--main-light-color);
     transition: background-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
     background-color: var(--secondary-text-color);
     fill: var(--main-light-color);
 }
@@ -523,24 +512,15 @@ color: var(--main-light-color);
     padding-bottom: var(--padding94);
 }
 
-.clients-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
-
 
 .clients-list {
     display: flex;
     justify-content: center;
     column-gap: 30px;
-    margin-top: 50px;
-    padding-bottom: 0;
-
+   
 }
 
-.clients-list-link {
+.clients-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,8 +536,8 @@ color: var(--main-light-color);
 
 
 
-.clients-list-link:hover,
-.clients-list-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
     border-color: var(--secondary-text-color);
     fill: var(--secondary-text-color);
     
@@ -566,11 +546,24 @@ color: var(--main-light-color);
 
 /* footer */
 
-.footerall {
+.footer-section {
     background-color: var(--dark-bcg-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-headers {
+    
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:  var(--main-light-color);
+}
+
 
 .footer-logo {
     display: inline-block;
@@ -634,7 +627,7 @@ color: var(--main-light-color);
     margin-bottom: 9px;
 }
 
-.container-footer {
+.flex-footer {
     display: flex;
     align-items: baseline;
 }
@@ -654,17 +647,7 @@ color: var(--main-light-color);
    
 }
 
-.social-header {
-    
-    margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color:  var(--main-light-color);
-}
 
 .social-list-footer {
     
@@ -674,7 +657,7 @@ color: var(--main-light-color);
     
 }
 
-.social-list-link-footer {
+.social-list-footer__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -687,8 +670,8 @@ color: var(--main-light-color);
     transition: background-color var(--time-transition) var(--line-transition);
 }
 
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
+.social-list-footer__link:hover,
+.social-list-footer__link:focus {
     background-color: var(--secondary-text-color);
 
 }
@@ -861,7 +844,7 @@ color: var(--main-light-color);
     box-shadow: none; */
     
     
-}
+
 
 .button-pfl.secondary:hover,
 .button-pfl.secondary:focus {
