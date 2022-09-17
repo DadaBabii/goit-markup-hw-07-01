@@ -1,8 +1,14 @@
 @import './utils/variables';
+@import './utils/visually-hidden';
+
 @import './base/common';
 @import './base/container';
-@import './utils/visually-hidden';
+
 @import './components/headers';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
 @import './layout/header';
 @import './layout/advertis-section';
 @import './layout/benefits-section';
@@ -11,6 +17,4 @@
 @import './layout/clients-section';
 @import './layout/portfolio-section';
 @import './layout/footer';
-@import './components/backdrop';
-@import './components/modal-window';
-@import './components/modal-form';
+
