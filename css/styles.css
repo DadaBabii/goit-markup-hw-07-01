@@ -6,11 +6,11 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-}
+} */
 
 /* основні кольори */
 
-:root {
+ :root { 
     --main-text-color: #212121;
     --light-text-color: #757575;
     --secondary-text-color: #2196F3;
@@ -23,7 +23,7 @@ html {
     --time-transition: 250ms;
     --line-transition: cubic-bezier(0.4, 0, 0.2, 1);
     
-}
+} */
 
 
 body {
@@ -64,7 +64,7 @@ img {
 
 a {
     text-decoration: none;
-}
+} 
 
 .headers {
     margin-bottom: 50px;
@@ -74,12 +74,24 @@ a {
     line-height: 1.17;
     text-align: center;
 
-}
+} 
 
 .link {
     display: inline-block;
-}
+} 
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
 
 
 /* Header */
@@ -298,18 +310,7 @@ a {
 
 /* Cекція про переваги */
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
 
 .benefits-section {
     padding-top: var(--padding94);   
@@ -321,11 +322,11 @@ a {
     
 }
 
-.benefits-list .item {
+.benefits-list__item {
     width: 270px;
 }
 
-.benefits-list .item + .item {
+.benefits-list__item + .benefits-list__item {
     margin-left: 30px;
     
 }
@@ -351,13 +352,13 @@ a {
 
 }
 
-.benefits-list__item {
+.benefits-list__text {
     font-size: 14px;
     line-height: 1.71;
     color: var(--light-text-color);
 }
 
-/* Секція з галерею */
+/* about-section */
 
 .card-set {
     display: flex;    
@@ -366,7 +367,7 @@ a {
     margin-bottom: calc(-1 * var(--margin30));
 }
 
-.card-set>.item {
+.card-set__item {
     flex-basis: calc(100/3 - var(--margin30));
     margin-left: var(--margin30);
     margin-bottom: var(--margin30);
@@ -378,7 +379,7 @@ a {
     
     }
 
-.card-set__item {
+.card-set__photo {
     display: block;
 }
 
@@ -389,14 +390,6 @@ a {
     height: 70px;
     width: 100%;
     background: rgba(47, 48, 58, 0.8);
-    /* color: var(--main-light-color);
-    padding: 27px 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase; */
     overflow: auto;
     z-index: 10;
 }
@@ -677,9 +670,6 @@ color: var(--main-light-color);
 
 }
 
-/* .footer-form {
-    margin-left: 93px;
-} */
 
 
 .footer-form-title {
@@ -1117,14 +1107,6 @@ color: var(--main-light-color);
 
 
 }
-/* .modal-form-own-chec-icon {
-     display: none;}  */
-                /* border: 2px solid var(--main-text-color);
-            border-radius: 2px;
-            background-color: var(--main-light-color);
-            cursor: pointer;  */
-
-
 
 
 
