@@ -58,6 +58,11 @@
 
     transition: color var(--time-transition) var(--line-transition);
 
+&:hover,
+&:focus {
+    color: var(--secondary-text-color);
+    }
+
 }
 
 .adress-link {
@@ -70,10 +75,6 @@
 
 }
 
-.adress:hover,
-.adress:focus {
-    color: var(--secondary-text-color);
-}
 
 .contact-item:not(:last-child) {
     margin-bottom: 9px;
@@ -95,8 +96,6 @@
 .container-footer-socials {
 
     width: 206px;
-
-
 
 }
 
@@ -121,14 +120,14 @@
     fill: var(--main-light-color);
 
     transition: background-color var(--time-transition) var(--line-transition);
+
+&:hover,
+&:focus {
+        background-color: var(--secondary-text-color);
+
+    }
+
 }
-
-.social-list-footer__link:hover,
-.social-list-footer__link:focus {
-    background-color: var(--secondary-text-color);
-
-}
-
 
 
 .footer-form-title {
@@ -157,12 +156,15 @@
     border-radius: 4px;
     color: #FFFFFF;
 
-}
 
-.footer-form-input::placeholder {
+&::placeholder {
     background-color: var(--dark-bcg-color);
     border-radius: 4px;
+   }
+
 }
+
+
 
 .footer-form-submit {
 
@@ -186,14 +188,17 @@
 
     transition: background-color var(--time-transition) var(--line-transition);
 
-}
 
-.footer-form-submit:hover,
-.footer-form-submit:focus {
+&:hover,
+&:focus {
     background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: transparent;
+    }
+
 }
+
+
 
 .footer-form-input-icon {
     display: block;

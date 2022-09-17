@@ -29,17 +29,15 @@
 
     transition: border-color var(--time-transition) var(--line-transition);
 
+    &:focus {
+        border-color: var(--secondary-text-color);
+        outline: none;
+    
+    }
 }
 
-.modal-form-input:focus {
-    border-color: var(--secondary-text-color);
-    outline: none;
 
-}
 
-.modal-form-input:focus+.modal-form-input-icon {
-    fill: var(--secondary-text-color);
-}
 
 .modal-form-field-textarea {
     margin-bottom: 20px;
@@ -59,6 +57,9 @@
 
     transition: fill var(--time-transition) var(--line-transition);
 
+.modal-form-input:focus + & {
+    fill: var(--secondary-text-color);
+    }
 
 }
 
@@ -89,21 +90,20 @@
     resize: none;
 
     transition: border-color var(--time-transition) var(--line-transition);
-}
 
-.modal-form-massage:focus {
-    border-color: var(--secondary-text-color);
-    outline: none;
-}
+&:focus {
+        border-color: var(--secondary-text-color);
+        outline: none;
+    }
 
-.modal-form-massage::placeholder {
+&::placeholder {
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    }
+
 }
-
-
 
 .modal-form-check-field {
     display: flex;
@@ -128,26 +128,22 @@
 
     transition: box-shadow var(--time-transition) var(--line-transition), background-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
 
+.modal-form-check:focus + & {
+        box-shadow: 0 0 0 1px var(--secondary-text-color);
 
+    }
 
-}
+.modal-form-check:checked + & {
 
+        background-color: var(--secondary-text-color);
+        border-radius: 2px;
+        border: none;
+        fill: var(--main-light-color);
 
-
-.modal-form-check:focus+.modal-form-own-check {
-    box-shadow: 0 0 0 1px var(--secondary-text-color);
-
-
-}
-
-.modal-form-check:checked+.modal-form-own-check {
-
-    background-color: var(--secondary-text-color);
-    border-radius: 2px;
-    border: none;
-    fill: var(--main-light-color);
+    }
 
 }
+
 
 .check-text {
     display: block;
@@ -187,11 +183,12 @@
 
     transition: background-color var(--time-transition) var(--line-transition);
 
-}
-
-.modal-form-submit:hover,
-.modal-form-submit:focus {
+&:hover,
+&:focus {
     background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: transparent;
+    }
+
 }
+

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-text-color: #212121;
   --light-text-color: #757575;
@@ -168,14 +167,9 @@ a {
   border-radius: 4px;
   transition: border-color var(--time-transition) var(--line-transition);
 }
-
 .modal-form-input:focus {
   border-color: var(--secondary-text-color);
   outline: none;
-}
-
-.modal-form-input:focus + .modal-form-input-icon {
-  fill: var(--secondary-text-color);
 }
 
 .modal-form-field-textarea {
@@ -193,6 +187,9 @@ a {
   left: 12px;
   transform: translateY(-50%);
   transition: fill var(--time-transition) var(--line-transition);
+}
+.modal-form-input:focus + .modal-form-input-icon {
+  fill: var(--secondary-text-color);
 }
 
 .modal-form-input-wrapper {
@@ -219,12 +216,10 @@ a {
   resize: none;
   transition: border-color var(--time-transition) var(--line-transition);
 }
-
 .modal-form-massage:focus {
   border-color: var(--secondary-text-color);
   outline: none;
 }
-
 .modal-form-massage::placeholder {
   font-size: 12px;
   line-height: 1.7;
@@ -253,11 +248,9 @@ a {
   background-color: var(--main-light-color);
   transition: box-shadow var(--time-transition) var(--line-transition), background-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
 }
-
 .modal-form-check:focus + .modal-form-own-check {
   box-shadow: 0 0 0 1px var(--secondary-text-color);
 }
-
 .modal-form-check:checked + .modal-form-own-check {
   background-color: var(--secondary-text-color);
   border-radius: 2px;
@@ -302,9 +295,7 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--time-transition) var(--line-transition);
 }
-
-.modal-form-submit:hover,
-.modal-form-submit:focus {
+.modal-form-submit:hover, .modal-form-submit:focus {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
@@ -360,9 +351,7 @@ a {
   line-height: 1.14;
   transition: color var(--time-transition) var(--line-transition);
 }
-
-.nav .nav__link:hover,
-.nav .nav__link:focus {
+.nav .nav__link:hover, .nav .nav__link:focus {
   color: var(--secondary-text-color);
 }
 
@@ -401,9 +390,7 @@ a {
   line-height: 1.14;
   transition: color var(--time-transition) var(--line-transition);
 }
-
-.social-links .link:hover,
-.social-links .link:focus {
+.social-links .link:hover, .social-links .link:focus {
   color: var(--secondary-text-color);
 }
 
@@ -471,53 +458,10 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--time-transition) var(--line-transition);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
-}
-
-/* Cекція про переваги */
-.benefits-section {
-  padding-top: var(--padding94);
-  padding-bottom: var(--padding94);
-}
-
-.benefits-list {
-  display: flex;
-}
-
-.benefits-list__item {
-  width: 270px;
-}
-
-.benefits-list__item + .benefits-list__item {
-  margin-left: 30px;
-}
-
-.grey-box {
-  display: flex;
-  margin-bottom: 30px;
-  background-color: var(--light-bcg-color);
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-}
-
-.benefits-list__header {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.benefits-list__text {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--light-text-color);
 }
 
 .benefits-section {
@@ -674,9 +618,7 @@ a {
   fill: #AFB1B8;
   transition: background-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
 }
-
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--secondary-text-color);
   fill: var(--main-light-color);
 }
@@ -704,9 +646,7 @@ a {
   fill: #AFB1B8;
   transition: border-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
 }
-
-.clients-list__link:hover,
-.clients-list__link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--secondary-text-color);
   fill: var(--secondary-text-color);
 }
@@ -754,9 +694,7 @@ a {
   border-color: var(--light-bcg-color);
   transition: color var(--time-transition) var(--line-transition), background-color var(--time-transition) var(--line-transition), box-shadow var(--time-transition) var(--line-transition);
 }
-
-.button-pfl_disable:hover,
-.button-pfl_disable:focus {
+.button-pfl_disable:hover, .button-pfl_disable:focus {
   color: var(--main-light-color);
   background-color: var(--secondary-text-color);
   border: 1px solid var(--secondary-text-color);
@@ -884,6 +822,9 @@ a {
   font-style: normal;
   transition: color var(--time-transition) var(--line-transition);
 }
+.adress:hover, .adress:focus {
+  color: var(--secondary-text-color);
+}
 
 .adress-link {
   color: rgba(255, 255, 255, 0.6);
@@ -891,11 +832,6 @@ a {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-}
-
-.adress:hover,
-.adress:focus {
-  color: var(--secondary-text-color);
 }
 
 .contact-item:not(:last-child) {
@@ -933,9 +869,7 @@ a {
   fill: var(--main-light-color);
   transition: background-color var(--time-transition) var(--line-transition);
 }
-
-.social-list-footer__link:hover,
-.social-list-footer__link:focus {
+.social-list-footer__link:hover, .social-list-footer__link:focus {
   background-color: var(--secondary-text-color);
 }
 
@@ -964,7 +898,6 @@ a {
   border-radius: 4px;
   color: #FFFFFF;
 }
-
 .footer-form-input::placeholder {
   background-color: var(--dark-bcg-color);
   border-radius: 4px;
@@ -989,9 +922,7 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--time-transition) var(--line-transition);
 }
-
-.footer-form-submit:hover,
-.footer-form-submit:focus {
+.footer-form-submit:hover, .footer-form-submit:focus {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;

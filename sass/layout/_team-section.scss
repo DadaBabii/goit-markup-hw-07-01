@@ -74,10 +74,11 @@
     fill: #AFB1B8;
 
     transition: background-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
-}
 
-.social-list__link:hover,
-.social-list__link:focus {
+&:hover,
+&:focus {
     background-color: var(--secondary-text-color);
     fill: var(--main-light-color);
+    }
 }
+

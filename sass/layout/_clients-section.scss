@@ -23,13 +23,14 @@
     fill: #AFB1B8;
 
     transition: border-color var(--time-transition) var(--line-transition), fill var(--time-transition) var(--line-transition);
-}
 
-
-
-.clients-list__link:hover,
-.clients-list__link:focus {
+&:hover,
+&:focus {
     border-color: var(--secondary-text-color);
     fill: var(--secondary-text-color);
 
+        }
 }
+
+
+
